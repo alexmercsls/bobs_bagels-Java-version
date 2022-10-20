@@ -1,11 +1,8 @@
-package bobsBagels;
-
-
-public class item {
+public class Item {
 
     private String name;
 
-    public item(String name) {
+    public Item(String name) {
         this.name = name;
     }
 
