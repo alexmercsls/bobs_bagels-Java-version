@@ -45,10 +45,9 @@ public class BasketTest {
         ArrayList<Item> Basket = new ArrayList<>();
         Item item1= new Item("Wholewheat bagel");
         Item item2 = new Item("White bagel");
-        int expected = 0;
+
         //Act
-        Basket.remove(item1);
-        int result = Basket.size();
+
         //Assert
         assertEquals(expected,result);
     };
