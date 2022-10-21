@@ -1,12 +1,17 @@
+import java.util.ArrayList;
+
 public class Basket{
 
 
-    private String [] basketList;
+    //private String[] basketList;
+    private ArrayList<> basketList = new ArrayList<>();
     private int capacity;
 
+    Item item;
 
-    public Basket(String[] basketList) {
-        this.basketList = basketList;
+    public Basket(ArrayList basketList) {
+          //this.basketList =  basketList;
+         // this.basket1 = basket1;
     };
 
     public String[] getBasketList() {
@@ -21,10 +26,17 @@ public class Basket{
         return capacity;
     }
 
+    public void addItem(String[] Item) {
+        this.basket1.add(Item);
+    }
+
     public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
 }
+
+    //String[] strArray = new String[10];
+
 //class Basket {
 //
 //    BasketItems;
