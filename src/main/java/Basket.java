@@ -1,12 +1,12 @@
 public class Basket{
 
 
-    String [] basketList;
-    Item item;
+    private String [] basketList;
+    private int capacity;
 
-    public Basket(String[] basketList, Item item) {
+
+    public Basket(String[] basketList) {
         this.basketList = basketList;
-        this.item = item;
     };
 
     public String[] getBasketList() {
@@ -17,6 +17,13 @@ public class Basket{
         this.basketList = basketList;
     };
 
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
 }
 //class Basket {
 //

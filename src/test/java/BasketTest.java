@@ -11,14 +11,14 @@ public class BasketTest {
     @DisplayName("check if item added to list")
     void addItem(){
         //Arrange
-        ArrayList<Item> basketList = new ArrayList<>();
+        ArrayList<Item> Basket = new ArrayList<>();
         Item item1= new Item("Wholewheat bagel");
         Item item2 = new Item("White bagel");
         int expected = 2;
         //Act
-        basketList.add(item1);
-        basketList.add(item2);
-        int result = basketList.size();
+        Basket.add(item1);
+        Basket.add(item2);
+        int result = Basket.size();
         //Assert
         assertEquals(expected,result);
     };
@@ -27,17 +27,31 @@ public class BasketTest {
     @DisplayName("check if item removed from list")
     void removeItem(){
         //Arrange
-        ArrayList<Item> basketList = new ArrayList<>();
+        ArrayList<Item> Basket = new ArrayList<>();
         Item item1= new Item("Wholewheat bagel");
         Item item2 = new Item("White bagel");
         int expected = 0;
         //Act
-        basketList.remove(item1);
-        int result = basketList.size();
+        Basket.remove(item1);
+        int result = Basket.size();
         //Assert
         assertEquals(expected,result);
     };
 
+    @Test
+    @DisplayName("check if basket is full")
+    void isFull(){
+        //Arrange
+        ArrayList<Item> Basket = new ArrayList<>();
+        Item item1= new Item("Wholewheat bagel");
+        Item item2 = new Item("White bagel");
+        int expected = 0;
+        //Act
+        Basket.remove(item1);
+        int result = Basket.size();
+        //Assert
+        assertEquals(expected,result);
+    };
 
 
 
